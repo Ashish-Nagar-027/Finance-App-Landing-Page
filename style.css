@@ -353,6 +353,61 @@ footer div .logo {
 
 /* 
 ------------
+  section 6
+-----------
+*/
+
+.section-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+    max-width: 90%;
+    margin: auto;
+    text-transform: capitalize;
+}
+
+.section-6 h1 {
+    font-size:2rem;
+    max-width:20rem;
+    margin-bottom: 2rem
+
+}
+
+.section-6-first {
+    display: flex;
+    gap: 1rem;
+  
+}
+
+.section-6-first div {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    padding: 2rem;
+    border-radius:6px
+}
+
+.section-6-first-first {
+       background: #FF5555;
+    color: white;
+}
+
+.section-6-first div  .heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    max-width: 21rem;
+}
+.section-6-first  .heading {
+    
+}
+
+
+
+
+
+/* 
+------------
   footer
 -----------
 */
