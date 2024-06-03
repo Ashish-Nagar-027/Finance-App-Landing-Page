@@ -1,0 +1,400 @@
+/* inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+/* 
+===================
+     custom fonts
+===================
+ */
+
+
+ 
+        @font-face {
+            font-family: 'ClashDisplay';
+            src: url('./assets/clash-display/ClashDisplayRegular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'ClashDisplay';
+            src: url('./assets/clash-display/ClashDisplayBold.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'ClashDisplay';
+            src: url('./assets/clash-display/ClashDisplayExtralight.otf') format('opentype');
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'ClashDisplay';
+            src: url('./assets/clash-display/ClashDisplayLight.otf') format('opentype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'ClashDisplay';
+            src: url('./assets/clash-display/ClashDisplayMedium.otf') format('opentype');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'ClashDisplay';
+            src: url('./assets/clash-display/ClashDisplaySemibold.otf') format('opentype');
+            font-weight: 600;
+            font-style: normal;
+        }
+
+
+
+
+
+/* 
+===================
+     css reset
+===================
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'ClashDisplay', sans-serif;
+ }
+
+ 
+a {
+     text-decoration: none;
+     color: inherit
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+   /* 
+===================
+     variables
+===================
+*/
+:root {
+     --clr-bg-primary : #fffff;
+     --clr-text-primary : #fffff;
+}
+
+
+
+
+
+/* 
+===================
+     global css
+===================
+ */
+
+
+body {
+    padding: 1rem 1rem 1rem 4rem;
+    /* overflow-x: hidden */
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #000000;
+    color:  #ffffff;
+    padding: 8px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight:400
+}
+
+
+/* 
+------------
+  Navbar
+-----------
+*/
+
+.navbar {
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+
+.navbar .left-nav , .navbar .right-nav {
+    flex:1
+} 
+
+.navbar .left-nav img{
+    height: 30px;
+    width:7rem
+}
+
+.navbar .left-nav ul {
+    margin-left:3rem;
+    font-weight: 400;
+    gap: 2rem
+
+}
+
+.navbar .left-nav ul li:hover{
+    color:orangered;
+    font-weight:bold
+}
+
+.hero-section {
+    display: flex;
+    position:relative
+}
+
+
+.left-hero-section {
+     display: flex;
+     flex: 1;
+     flex-direction: column;
+     gap:1.2rem;
+     padding: 4rem 2rem;
+     position: relative;
+     /* align-items: flex-end */
+}
+
+
+.left-hero-section h1 {
+    font-weight: 900;
+    font-size:4rem;
+    margin-top: 1rem;
+    /* width: 40rem */
+}
+
+.left-hero-section h1 {
+  font-size: clamp(3rem, 4vw, 5rem); /* Min: 1.5rem, Preferred: 5vw, Max: 3rem */
+}
+
+
+.left-hero-section p {
+    text-transform:  capitalize;
+    color: #000000;
+    opacity: 80%;
+    width: 37rem;
+
+}
+
+.left-hero-section div{
+     display: flex ;
+     gap: 1rem;
+     align-items: center;
+    /* align-self: baseline; */
+}
+
+
+footer div .logo {
+    max-height: 2rem;
+    width:max-content
+
+}
+
+.left-hero-section .left-top-img {
+    width:90%
+}
+
+.watch-img {
+      width:1.7rem;
+}
+
+.right-hero-section {
+    flex:1;
+    position: relative
+}
+
+
+
+
+.top-phones {
+    position: absolute;
+    z-index:1;
+    max-width:100%
+
+}
+
+.top-phone-1 {
+    left: -6rem;
+    z-index: 3;
+    top: -3rem;
+
+}
+
+.top-phone-2 {
+    left: 1.68rem;
+    top: 2rem;
+    z-index: 2;
+    ;
+}
+
+.top-phone-3 {
+  left: 9.46rem;
+    top: 6.5rem;
+}
+
+
+
+
+.phone-background-circles {
+    z-index: 0;
+    top: -1.2rem;
+    left: 1.1rem;
+}
+
+
+#phones-bg {
+  background-image: url('./assets/Group 35899.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;  
+  width:80%;
+  height:100%;
+  background-size: contain;
+    background-position:left;
+    top: -1rem;
+    left: 63px;
+} 
+
+
+
+   
+
+
+
+/* 
+------------
+  same sections  features 
+-----------
+*/
+
+.same-sections {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize
+}
+
+.same-sections-left,.same-sections-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.same-sections-right h3{
+    color: #FF5555;
+    font-weight: 400;
+    margin-left:4rem
+
+}
+.same-sections-right h2{
+    font-size: 2.5rem;
+    margin-left:4rem
+
+}
+
+.same-sections-right div{
+    margin-top: 1.4rem;
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 30rem;
+    justify-content: center;
+    margin-left:4rem
+
+
+}
+
+.same-sections-right-sub-section h4{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+
+}
+
+.same-sections-right-sub-section p{
+    color: #909090;
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+
+.same-sections-right .section-4-right  {
+    margin-left:0
+}
+
+
+.persons-img {
+    height:3rem;
+    max-width:50%;
+    backgound-size: contain
+
+}
+
+
+
+
+/* 
+------------
+  footer
+-----------
+*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding:3rem;
+    margin-top:3rem
+}
+
+footer div ,footer div ul {
+ display: flex;
+ flex-direction:column;
+ gap:1rem
+}
+
+
+footer div ul li{
+    display: flex;
+    justify-content: flex-start;
+    gap:0.4rem
+
+
+}
+
+ .fading-line {
+            width: 90%; 
+            height: 1px; 
+            background: linear-gradient(to right, transparent, gray, transparent);
+            margin: 20px auto; 
+        }
+
+
+.footer-cred {
+    text-align: center;
+    font-weight:400;
+    font-size:0.9rem
+}
+
+.right-hero-section img {
+    position: absolute;
+    left: -115px;
+    top: -20px;
+}
