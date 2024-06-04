@@ -105,9 +105,25 @@ body {
   gap: 2rem;
 }
 
+.navbar > .left-nav > ul > li{
+    min-width: fit-content
+}
+
 .navbar .left-nav ul li:hover {
   color: orangered;
   font-weight: bold;
+}
+
+.hamburger {
+    cursor: pointer;
+    display:none;
+
+}
+
+.hamburger div {
+    background: black;
+    width: 1.8rem;
+    height: 2px;
 }
 
 .hero-section {
@@ -455,24 +471,127 @@ footer div ul li .Newslater-div input {
 
 /* lg */
 @media (max-width: 1075px) {
-    .hero-section {
-        flex-direction: column-reverse;
-    }
+
+
+
+.hero-section {
+    flex-direction: column;
+}
+
 .right-hero-section img {
     position: relative;
     max-width:300px
 }
 
+.left-hero-section .left-top-img {
+  display: none
+}
+
+.same-sections {
+  flex-direction:column
+}
+
+img {
+    max-width: 100%
+}
+
+.section-3 {
+    flex-direction: column-reverse
+}
+
+footer {
+    flex-wrap: wrap;
+    gap:1rem;
+    padding:1rem
+}
+
+.section-6 {
+ padding: 3rem
+}
+
 }
 
 /* md */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
+    .navbar ul, .navbar .btn {
+        display: none
+    }
+
+    .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px
+        
+    }
+
+    body {
+    padding: 1rem 1rem 1rem 1rem
+    }
+
+    .section-6 div{
+    flex-wrap:wrap;
+    }
+
+   .section-6 {
+      padding: 2rem;
+      gap: 1rem
+    }
+
+    #column-reverse {
+        flex-direction: column-reverse
+    }
+
+    .same-sections {
+        margin-bottom: 1rem
+    }
+
+    .section-4::before {
+        display:none
+    }
+
+
+
 }
 
 /* sm */
 @media (max-width: 640px) {
+    .left-hero-section p {
+    max-width: fit-content;
+    }
+
+    img  {
+        max-width:80%
+    }
+
+    .section-5::before {
+    display: none
 }
+
+    .right-hero-section img  {
+    min-width:auto;
+    display:none
+    }
+
+    .section-6 {
+      padding: 1rem
+      }
+    
+
+
+
+  
+}
+
 
 /* xs */
 @media (max-width: 475px) {
+   .left-hero-section h1 ,.section-6 h1 , h1{
+  font-size: clamp(
+    1.5rem,
+    4vw,
+    3rem
+  ); /* Min: 1.5rem, Preferred: 5vw, Max: 3rem */
+  
+   }
+
 }
