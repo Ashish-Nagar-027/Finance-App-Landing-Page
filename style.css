@@ -114,7 +114,7 @@ body {
 .btn {
     background-color: #000000;
     color:  #ffffff;
-    padding: 8px 20px;
+    padding: 15px 20px;
     border-radius: 2px;
     cursor: pointer;
     font-weight:400
@@ -130,6 +130,7 @@ body {
 .navbar {
     justify-content: space-between;
     padding: 1rem 0rem;
+    display: flex
 }
 
 .navbar .left-nav , .navbar .right-nav {
@@ -246,6 +247,8 @@ footer div .logo {
 
 
 
+
+
 /* 
 ------------
   same sections  features 
@@ -259,10 +262,11 @@ footer div .logo {
 }
 
 .same-sections-left,.same-sections-right {
-    flex: 1;
+   flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+
 }
 
 
@@ -315,7 +319,7 @@ footer div .logo {
 
 }
 
-.section-4 , .section-5{
+.section-4 , .section-5, .section-7 {
      position:relative;
 }
 
@@ -345,6 +349,28 @@ footer div .logo {
 }
 
 
+.section-7::before {
+    content: "";
+    background: url('./assets/icons/Star 8.png');
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+    background-size: contain;
+    position: absolute;
+    top: 130px;
+    left: -20px;
+}
+.section-7::after {
+    content: "";
+    background: url('./assets/icons/Star 5.png');
+    background-repeat: no-repeat;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: contain;
+    position: absolute;
+   top: -70px;
+    right: 25px;
+}
 
 /* 
 ------------
@@ -393,10 +419,19 @@ footer div .logo {
     font-weight: 600;
     max-width: 21rem;
 }
-.section-6-first  .heading {
-    
-}
 
+
+
+.section-6-h1 {
+    position : relative
+}
+.section-6-h1 img {
+    position : absolute;
+    bottom: 0;
+    left: 30rem;
+    height:2.5rem
+
+}
 
 
 
@@ -421,20 +456,33 @@ footer div ,footer div ul {
 }
 
 
+
 footer div ul li{
     display: flex;
     justify-content: flex-start;
     gap:0.4rem
-
-
 }
 
- .fading-line {
+footer div ul li .Newslater-div {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    padding: 0.8rem;
+    border-color: rgba(128, 128, 128, 0.2);
+}
+
+footer div ul li .Newslater-div input {
+    outline: none;
+    max-width: 7rem;
+    border: none;
+}
+
+.fading-line {
             width: 90%; 
             height: 1px; 
             background: linear-gradient(to right, transparent, gray, transparent);
             margin: 20px auto; 
-        }
+    }
 
 
 .footer-cred {
@@ -448,3 +496,44 @@ footer div ul li{
     left: -115px;
     top: -20px;
 }
+
+
+
+
+
+/* 
+===============================================
+  Media Queries  for different screen sizes
+===============================================
+*/
+
+
+@media (max-width: 1436px) {
+    
+.navbar {
+    justify-content: space-between;
+    padding: 1rem 8rem 1rem 2rem;
+    display: flex;
+    gap:1rem
+    }
+
+.navbar .left-nav, .navbar .right-nav {
+    flex: none;
+}
+
+}
+
+/* xl */
+@media (max-width: 1280px) {}
+
+/* lg */
+@media (max-width: 1024px) {}
+
+/* md */
+@media (max-width: 768px) {}
+
+/* sm */
+@media (max-width: 640px) {}
+
+/* xs */
+@media (max-width: 475px) {}
