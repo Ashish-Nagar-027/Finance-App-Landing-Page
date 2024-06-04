@@ -175,8 +175,8 @@ body {
   align-items: center;
   justify-content: center;
    position: absolute;
-  top:2rem;
-  right:1rem;
+  top:2.5rem;
+  right:2.5rem;
   cursor: pointer;
 
 }
