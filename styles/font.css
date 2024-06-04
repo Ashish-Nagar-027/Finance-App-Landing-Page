@@ -1,0 +1,47 @@
+/* 
+===================
+     custom fonts
+===================
+*/
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../assets/clash-display/ClashDisplayRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../assets/clash-display/ClashDisplayBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../assets/clash-display/ClashDisplayExtralight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../assets/clash-display/ClashDisplayLight.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../assets/clash-display/ClashDisplayMedium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../assets/clash-display/ClashDisplaySemibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}

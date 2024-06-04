@@ -1,0 +1,478 @@
+/* Import fonts from font.css */
+@import url("./font.css");
+
+
+
+
+/* 
+===================
+     css reset
+===================
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ClashDisplay", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 
+===================
+     variables
+===================
+*/
+:root {
+  --clr-bg-primary: #fffff;
+  --clr-text-primary: #fffff;
+}
+
+/* 
+===================
+     global css
+===================
+ */
+
+body {
+  padding: 1rem 1rem 1rem 4rem;
+  /* overflow-x: hidden */
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+@media (max-width: 1436px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 1rem 8rem 1rem 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .navbar .left-nav,
+  .navbar .right-nav {
+    flex: none;
+  }
+}
+
+
+/* 
+------------
+  Navbar
+-----------
+*/
+
+.navbar {
+  justify-content: space-between;
+  padding: 1rem 0rem;
+  display: flex;
+}
+
+.navbar .left-nav,
+.navbar .right-nav {
+  flex: 1;
+}
+
+.navbar .left-nav img {
+  height: 30px;
+  width: 7rem;
+}
+
+.navbar .left-nav ul {
+  margin-left: 3rem;
+  font-weight: 400;
+  gap: 2rem;
+}
+
+.navbar .left-nav ul li:hover {
+  color: orangered;
+  font-weight: bold;
+}
+
+.hero-section {
+  display: flex;
+  position: relative;
+}
+
+.left-hero-section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.left-hero-section h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+.left-hero-section h1 {
+  font-size: clamp(
+    3rem,
+    4vw,
+    5rem
+  ); /* Min: 1.5rem, Preferred: 5vw, Max: 3rem */
+}
+
+.left-hero-section::before {
+  content: "";
+  background: url("../assets/icons/Star 8.png");
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: -25px;
+}
+
+.left-hero-section p {
+  text-transform: capitalize;
+  color: #000000;
+  opacity: 80%;
+  width: 37rem;
+}
+
+.left-hero-section div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer div .logo {
+  max-height: 2rem;
+  width: max-content;
+}
+
+.left-hero-section .left-top-img {
+  width: 90%;
+}
+
+.watch-img {
+  width: 1.7rem;
+}
+
+.right-hero-section {
+  flex: 1;
+  position: relative;
+}
+
+.section-2 {
+  position: relative;
+}
+
+.section-2::before {
+  content: "";
+  background: url("../assets/icons/Star 8.png");
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  position: absolute;
+  top: 150px;
+  left: 10px;
+}
+
+/* 
+------------
+  same sections  features 
+-----------
+*/
+
+.same-sections {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.same-sections-left,
+.same-sections-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.same-sections-right h3 {
+  color: #ff5555;
+  font-weight: 400;
+  margin-left: 4rem;
+}
+
+.same-sections-right h2 {
+  font-size: 2.5rem;
+  margin-left: 4rem;
+}
+
+.same-sections-right div {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 30rem;
+  justify-content: center;
+  margin-left: 4rem;
+}
+
+.same-sections-right-sub-section h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.same-sections-right-sub-section p {
+  color: #909090;
+  font-weight: 300;
+  line-height: 1.4rem;
+}
+
+.same-sections-right .section-4-right {
+  margin-left: 0;
+}
+
+.persons-img {
+  height: 3rem;
+  max-width: 50%;
+  backgound-size: contain;
+}
+
+.section-4,
+.section-5,
+.section-7 {
+  position: relative;
+}
+
+.section-4::before {
+  content: "";
+  background: url("../assets/icons/Star 5.png");
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 3rem;
+  background-size: contain;
+  position: absolute;
+  bottom: 0px;
+  right: 150px;
+}
+
+.section-5::before {
+  content: "";
+  background: url("../assets/icons/Star 8.png");
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 3rem;
+  background-size: contain;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.section-7::before {
+  content: "";
+  background: url("../assets/icons/Star 8.png");
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  position: absolute;
+  top: 130px;
+  left: -20px;
+}
+
+.section-7::after {
+  content: "";
+  background: url("../assets/icons/Star 5.png");
+  background-repeat: no-repeat;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: contain;
+  position: absolute;
+  top: -70px;
+  right: 25px;
+}
+
+/* 
+------------
+  section 6
+-----------
+*/
+
+.section-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+  max-width: 90%;
+  margin: auto;
+  text-transform: capitalize;
+}
+
+.section-6 h1 {
+  font-size: 2rem;
+  max-width: 20rem;
+  margin-bottom: 2rem;
+}
+
+.section-6-first {
+  display: flex;
+  gap: 1rem;
+}
+
+.section-6-first div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+.section-6-first-first {
+  background: #ff5555;
+  color: white;
+}
+
+.section-6-first div .heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  max-width: 21rem;
+}
+
+.section-6-h1 {
+  position: relative;
+}
+
+.section-6-h1 img {
+  position: absolute;
+  bottom: 0;
+  left: 30rem;
+  height: 2.5rem;
+}
+
+/* 
+------------
+  footer
+-----------
+*/
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+footer div,
+footer div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer div ul li {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.4rem;
+}
+
+footer div ul li .Newslater-div {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+  padding: 0.8rem;
+  border-color: rgba(128, 128, 128, 0.2);
+}
+
+footer div ul li .Newslater-div input {
+  outline: none;
+  max-width: 7rem;
+  border: none;
+}
+
+.fading-line {
+  width: 90%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, gray, transparent);
+  margin: 20px auto;
+}
+
+.footer-cred {
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.right-hero-section img {
+  position: absolute;
+  left: -115px;
+  top: -20px;
+}
+
+/* 
+===============================================
+  Media Queries  for different screen sizes
+===============================================
+*/
+
+
+/* xl */
+@media (max-width: 1240px) {
+.right-hero-section img {
+    position: absolute;
+    left: -31px;
+    top: -20px;
+    max-width: 100%;
+    min-width: 450px;
+}
+
+.left-hero-section h1 {
+    font-size: clamp( 2.5rem, 3vw, 5rem );
+}
+
+}
+
+/* lg */
+@media (max-width: 1075px) {
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+.right-hero-section img {
+    position: relative;
+    max-width:300px
+}
+
+}
+
+/* md */
+@media (max-width: 768px) {
+}
+
+/* sm */
+@media (max-width: 640px) {
+}
+
+/* xs */
+@media (max-width: 475px) {
+}
